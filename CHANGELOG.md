@@ -8,4 +8,4 @@
 
 ### v1.0.0
 
- * object-conceal initial commit.
+ * concealotron initial commit.

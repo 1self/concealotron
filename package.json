@@ -1,7 +1,7 @@
 {
-  "name": "object-conceal",
+  "name": "concealotron",
   "version": "1.2.0",
-  "description": "object-conceal is a micro module with no dependencies that takes an object and returns a copy that has all of the string fields truncated. This is useful for when you want to log an object but it contains sensitive ids, e.g. database fields or secrets. Non string fields are left untouched. The default truncation is to 3 characters, which is normally enough to allow the identification of entities that are known to the developer or operations",
+  "description": "concealotron is a micro module with no dependencies that takes an object and returns a copy that has all of the string fields truncated. This is useful for when you want to log an object but it contains sensitive ids, e.g. database fields or secrets. Non string fields are left untouched. The default truncation is to 3 characters, which is normally enough to allow the identification of entities that are known to the developer or operations",
   "main": "dist/index.js",
   "files": [
     "bin/",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/1self/object-concealer"
+    "url": "https://github.com/1self/concealotroner"
   },
   "keywords": [
     "object obfuscation obfuscator logging"
@@ -37,9 +37,9 @@
   "author": "Ed Sykes <ed.sykes@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/1self/object-concealer/issues"
+    "url": "https://github.com/1self/concealotroner/issues"
   },
-  "homepage": "https://github.com/1self/object-concealer#readme",
+  "homepage": "https://github.com/1self/concealotroner#readme",
   "devDependencies": {
     "eslint": "*",
     "babel-eslint": "*",
