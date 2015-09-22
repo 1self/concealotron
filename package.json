@@ -1,6 +1,6 @@
 {
   "name": "concealotron",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "concealotron helps you conceal an object. It takes an object and returns a copy that has all of the string fields truncated. This is useful for when you want to log an object but it contains sensitive ids, e.g. database fields or secrets. Non string fields are left untouched. The default truncation is to 3 characters, which is normally enough to allow the identification of entities that are known to the developer or operations",
   "main": "dist/index.js",
   "files": [
