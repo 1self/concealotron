@@ -1,10 +1,18 @@
 language: node_js
 node_js:
-  - '0.10'
-  - '0.11'
-  - '0.12'
-  - 'iojs-1'
-  - 'iojs-2'
-  - 'stable'
+- '0.10'
+- '0.11'
+- '0.12'
+- iojs-1
+- iojs-2
+- stable
 after_script:
-  - npm run coveralls
+- npm run coveralls
+deploy:
+  provider: npm
+  email: ed.sykes@gmail.com
+  api_key:
+    secure: sNtNDNDciP0FD8vyPgu3YZCmGYNh+esa938Bz+zbbweNVAsdxU443g5zjMwTmH/EkQpMLCDGw3oHL2zNgTv0gXImnmzTVUy7NXxcVEbiyNhuFqHRGxN/3fGnL1w6PNpBAVQRK7Y3+VUIea9vKH/kk+HUX0BhZT26wAlkIfBJcbsmTmaIKf+trW4bov/jtNZZlkuAZ+kdQNW/sZT3cyQQ2inHHKy1GIwyW9SFsksqK39VVaj7iiXSvv/Tx/xg1f9ygKPy4f1cOK40080XR4WNbceaNSYyZN5NlP5/Hn/ylFKkT3i4CWg0b1F483ADdTveCQc8Zea+qbk4w4CKWNxbrAwcVBWcG/sBnHrvNIkIwuq/E35k7tkeQjaWrfWMdM7TMmQbUK+oOiHMg/fGRPxx+dlptBVcxkFRcMPwrN+AW5NSden5aAGB1DkIaKLZRS2RjzXt0TWuM89fbiRS5Cj/a33x3uIxz4JDL9touavp0CfgoThoS/KDwoaaLTU/Gu9E21riVUb8MItE9nSnAg3gvil337z2gK2Q+lP2u9WUPfUl15QTVQw2z0B2wKdtqn7imuIRW/YsJGruA4PJ2xWvGfQpjQRxzuqFq+vElDMljJcYUEEa85L7R4nCi8u+ILADBeGqdLDzUUOWlAJWPFo0FZx4qfhQCfY5DYERnaz9SUY=
+  on:
+    tags: true
+    repo: 1self/object-concealer
