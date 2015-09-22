@@ -7,12 +7,12 @@
   </a>
 
   <a href="https://coveralls.io/r/1self/object-conceal">
-    <img src="https://img.shields.io/coveralls//object-conceal.svg?style=flat-square"
+    <img src="https://img.shields.io/coveralls/1self/object-conceal.svg?style=flat-square"
          alt="Coverage Status">
   </a>
 
   <a href="https://travis-ci.org/1self/object-conceal">
-    <img src="https://img.shields.io/travis//object-conceal.svg?style=flat-square"
+    <img src="https://img.shields.io/travis/1self/object-conceal.svg?style=flat-square"
          alt="Build Status">
   </a>
 
