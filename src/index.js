@@ -2,18 +2,22 @@
  * @param {Type}
  * @return {Type}
  */
-export default function (object, truncationLength) {
+export default function (value, truncationLength) {
 	if(truncationLength === undefined){
 		truncationLength = 3;
 	}
 
+	if(typeof value === 'string'){
+		return value.substring(0, truncationLength);
+	}
+
 	var result = {};
-	Object.keys(object).forEach(key => {
-		if(typeof object[key] === 'string'){
-			result[key] = object[key].substring(0, truncationLength);
+	Object.keys(value).forEach(key => {
+		if(typeof value[key] === 'string'){
+			result[key] = value[key].substring(0, truncationLength);
 		}
 		else {
-			result[key] = object[key];
+			result[key] = value[key];
 		}
 	});
   	return result;
