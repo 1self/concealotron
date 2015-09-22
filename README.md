@@ -6,12 +6,12 @@
          alt="NPM Version">
   </a>
 
-  <a href="https://coveralls.io/r//object-conceal">
+  <a href="https://coveralls.io/r/1self/object-conceal">
     <img src="https://img.shields.io/coveralls//object-conceal.svg?style=flat-square"
          alt="Coverage Status">
   </a>
 
-  <a href="https://travis-ci.org//object-conceal">
+  <a href="https://travis-ci.org/1self/object-conceal">
     <img src="https://img.shields.io/travis//object-conceal.svg?style=flat-square"
          alt="Build Status">
   </a>
@@ -21,8 +21,8 @@
          alt="Downloads">
   </a>
 
-  <a href="https://david-dm.org//object-conceal.svg">
-    <img src="https://david-dm.org//object-conceal.svg?style=flat-square"
+  <a href="https://david-dm.org/1self/object-conceal.svg">
+    <img src="https://david-dm.org/1self/object-conceal.svg?style=flat-square"
          alt="Dependency Status">
   </a>
 
