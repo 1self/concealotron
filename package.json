@@ -1,0 +1,59 @@
+{
+  "name": "object-conceal",
+  "version": "1.0.0",
+  "description": "object-conceal is a micro module with no dependencies that takes an object and returns a copy that has all of the string fields truncated. This is useful for when you want to log an object but it contains sensitive ids, e.g. database fields or secrets. Non string fields are left untouched. The default truncation is to 3 characters, which is normally enough to allow the identification of entities that are known to the developer or operations",
+  "main": "dist/index.js",
+  "files": [
+    "bin/",
+    "dist/"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "eslint src test",
+    "check": "npm run lint -s && dependency-check package.json --entry src",
+    "watch": "watch 'npm run build' src test",
+    "test": "babel-node test/*.js | tspec",
+    "prebuild": "npm run check -s && npm run clean -s",
+    "build": "babel --optional runtime src -d dist",
+    "postbuild": "npm run test -s",
+    "coverage": "babel-node node_modules/.bin/isparta cover test/*.js",
+    "coveralls": "npm run coverage -s && coveralls < coverage/lcov.info",
+    "postcoveralls": "rimraf ./coverage",
+    "prepublish": "npm run build -s",
+    "deploy": "git pull --rebase origin master && git push origin master",
+    "patch": "npm version patch && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish",
+    "postpublish": "git push origin master --follow-tags",
+    "toc": "doctoc --github --title \"# Changelog\" CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1self/object-concealer"
+  },
+  "keywords": [
+    "object obfuscation obfuscator logging"
+  ],
+  "author": "Ed Sykes <ed.sykes@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1self/object-concealer/issues"
+  },
+  "homepage": "https://github.com/1self/object-concealer#readme",
+  "devDependencies": {
+    "eslint": "*",
+    "babel-eslint": "*",
+    "babel": "*",
+    "coveralls": "*",
+    "isparta": "*",
+    "tape": "*",
+    "tap-spec": "*",
+    "rimraf": "*",
+    "dependency-check": "*",
+    "watch": "*",
+    "doctoc": "*"
+  },
+  "dependencies": {
+    "babel-runtime": "*"
+  }
+}
